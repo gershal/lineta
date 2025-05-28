@@ -1,0 +1,271 @@
+:root {
+    --COL1: #1A3C6A;
+    --COL2: #4A4A4A;
+    --COL3:;
+
+    /* Text */
+    --H1: 24px;
+    --H2: 32px;
+    --H3: 48px;
+    --P1: 14px;
+    --P2: 16px;
+    --P3: 20px;
+
+    /*Line Spacing */
+    --L1: 1.5;
+    --L2: 1.8; 
+}
+
+/* Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blue {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.blue.active {
+    display: none;
+}
+
+.blue-info {
+    text-align: left;
+    width: 40vw;
+}
+
+.blue-info h1 {
+    font-size: 48px;
+    padding-block-end: 1rem;
+}
+
+.blue-info p {
+    font-size: 20px;
+    margin-block-end: 1rem;
+    line-height: 1.8;
+}
+
+.blue-img img {
+    width: 35rem;
+}
+
+.blue-btn {
+    width: 9rem;
+    height: 1rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: blue;
+    background: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px blue, -1px -1px 5px blue;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.blue-btn:hover {
+    background: blue;
+    color: white;
+    letter-spacing: 2px;
+    width: 10rem;
+}
+
+.nav-bar.active {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.nav-bar a:hover {
+    color: blue;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    transition: background 0.3s;
+    color: #000;
+}
+
+.nav-list.active {
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.about {
+    background: yello;
+    color: #000;
+    margin: 2rem 4rem;
+    border: 2px solid yellow;
+    width: 80vw;
+    text-align: center;
+}
+.about>h2 {
+    text-transform: uppercase;
+    margin-block-end: 1rem;
+}
+
+.about.active {
+    display: none;
+}
+
+.about-content {
+    display: grid;
+    grid-template-rows: 1fr;
+    flex: 1;
+    border: 2px solid blue;
+    width: 80vw;
+    position: relative;
+}
+
+.about-bio {
+    border: 2px solid red;
+    padding: 1rem;
+    text-align: left;
+    line-height: 1.8;
+    margin: 0 1rem;
+    max-width: 35vw;
+    height: auto;
+}
+
+.about-bio p {
+    font-size: 20px;
+}
+
+.about-bio span {
+    font-weight: 700;
+    color: aqu;
+}
+
+.about-qly1 {
+    text-align: left;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.about-qly1 h2 {
+    margin-block: 1rem;
+}
+
+.about-qly1 details {
+    border: 2px solid #ccc;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.about-qly1 details {
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+summary::marker {
+    content: '';
+}
+
+summary h3 {
+    padding-block-end: 1rem;
+}
+
+summary:hover {
+    color: red;
+}
+
+.about-qly1 details p {
+    font-size: 20px;
+}
+
+.contact {
+    background: red;
+    width: 100vw;
+    height: 100vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact.active {
+    display: none;
+}
+
+.green {
+    background: green;
+    width: 100vw;
+    height: 100vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.green.active {
+    display: none;
+}
+
+.purple {
+    background: purple;
+    width: 100vw;
+    height: 100vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.purple.active {
+    display: none;
+}
+
+.brown {
+    background: brown;
+    width: 100vw;
+    height: 100vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brown.active {
+    display: none;
+}
